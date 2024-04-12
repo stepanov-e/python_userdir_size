@@ -3,4 +3,4 @@ Description=Calculate the size of home directories
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/python3.11 /home/deterrent/sber/python_passwd/userdir.py
+ExecStart=/usr/bin/python3.11 /path/userdir.py
