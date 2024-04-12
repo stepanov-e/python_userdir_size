@@ -1,12 +1,13 @@
 1. Скопирвать userdir.service в /lib/systemd/system
 2. Скопирвать userdir.timer в /lib/systemd/system
+3. Изменить путь к python и скрипту в userdir.service
 
-3. Перечитать конфигурацию systemd
+4. Перечитать конфигурацию systemd
 `systemctl daemon-reload`
 
-4. Создаем симлинку для автоматического запуска после перезагрузки
+5. Создаем симлинку для автоматического запуска после перезагрузки
 `systemctl enable userdir.timer`
 Отобразиться (Created symlink /etc/systemd/system/timers.target.wants/userdir.timer → /lib/systemd/system/userdir.timer.)
 
-5. Запускаем
+6. Запускаем
 `systemctl start userdir.timer`
